@@ -1,0 +1,158 @@
+/*fontes utilizadas*/
+.font-family {
+  font-family: "Fjalla One", sans-serif;
+  font-family: "Roboto", sans-serif;
+  font-family: "Raleway", sans-serif;
+  font-family: "Lato", sans-serif;
+}
+
+
+
+/*Menu Site */
+h1 {
+  font-family: Roboto;
+  font-size: 30p;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-top: 50px;
+  text-align: center;
+}
+
+
+p {
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: lighter;
+  text-align: center;
+  text-transform: uppercase;
+  color: black;
+  margin-top: 10px;
+  margin-bottom: 40px;
+}
+
+
+
+.header {
+  width: 100%;
+  height:60% ;
+  background: #0b3aea;
+}
+
+.menu-topo {
+  text-align: right;
+}
+
+.menu-topo li {
+  display: inline-block;
+  margin-left: 20px;
+  margin-top: 10px;
+}
+
+.menu-topo a {
+  text-decoration: none;
+  font-family:raleway;
+  font-size: 28px;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+
+
+
+
+}
+
+.menu-topo a:hover{
+  transition: 0.7s all;
+  color: black;
+
+}
+.localizacao{
+  margin-bottom: 40px;
+}
+
+/* Formulario Orcamento*/
+
+.form label {
+  display: block;
+  color: black;
+  font-family: Roboto;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 20px;
+  margin-top: 30px;
+  text-transform: uppercase;
+}
+
+.form input {
+  display: block;
+  width: 100%;
+  border: 3px solid #2e64fe;
+  color: black;
+  padding: 4px;
+  margin-top: 10px;
+  font-size: 15px;
+  outline: none;
+
+}
+.form textarea {
+  display: block;
+  width: 100%;
+  border: 3px solid #2e64fe;
+  color: black;
+  padding: 4px;
+  margin-top: 10px;
+  font-size: 15px;
+
+
+}
+
+.form button {
+  background: blue;
+  padding: 10px 25px;
+  margin-top: 10px;
+  color: white;
+  border: 0;
+  font-size: 15px;
+}
+
+.form button:hover {
+  background: black;
+  color: white;
+}
+
+.ins{
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+/* Rodape*/
+
+.footer{
+  height: 180px;
+  background: #0b3aea;
+}
+
+.footer h2{
+  font-family: Roboto;
+  font-size: 20px;
+  font-weight: bold;
+  text-transform:uppercase;
+  margin-top: 20px;
+  text-align: left;
+  color: white;
+}
+
+.footer p{
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: lighter;
+  text-transform: unset;
+  text-align: left;
+  color:white;
+  margin-top: 20px;
+
+}
+
+.logos-redes{
+  margin-top: 30px;
+}

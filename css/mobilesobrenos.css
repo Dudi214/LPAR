@@ -1,0 +1,54 @@
+/* tablet*/
+
+@media only screen and (min-width: 788px) and (max-width: 979px) {
+
+	.sobrenos img {
+		margin-top: 150px;
+	}
+
+
+}
+/* celular*/
+@media only screen and (max-width: 787px) {
+	.header {
+		position: relative;
+		height: 280px;
+	}
+
+	.header img{
+		margin-left: 100px;
+		margin-bottom: 20px;
+
+	}
+
+	.menu-topo {
+		text-align:center;
+	}
+
+	.menu-topo ul li a {
+		display: block;
+
+		padding: 5px;
+		border: 3px solid #2eccfa;
+		width: 200px;
+	}
+
+	.sobrenos p{
+		text-align: center;
+	}
+
+	.sobrenos img {
+
+	 margin-right: 100px;
+	}
+
+
+	/*rodape*/
+
+	.footer {
+		height: 470px;
+	}
+
+
+
+}
