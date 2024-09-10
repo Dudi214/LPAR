@@ -83,7 +83,7 @@ p {
   text-transform: uppercase;
 }
 
-.form input {
+.input {
   display: block;
   width: 100%;
   border: 3px solid #2e64fe;
