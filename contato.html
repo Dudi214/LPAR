@@ -38,20 +38,19 @@
       <h1>Entre em contato Conosco</h1>
       <p>Tire suas principais dúvidas</p>
 
-      <form action="https://formsubmit.co/dudumbca@email.com" method="POST"
+      <form action="https://api.staticforms.xyz/submit" method="post"
        id="formulario-contato" class="form grid-8">
 
-        <input type="hidden" nome="_next" value="https://lparcondicionados.vercel.app/obrigado">
 
         <label for="nome">Nome</label>
-        <input type="text" name="name">
+        <input type="text" name="name" required>
 
 
         <label for="email">E-mail</label>
-        <input type="email" name="email">
+        <input type="email" name="email" required>
 
         <label for="telefone">Telefone</label>
-        <input type="text" id="telefone">
+        <input type="text" id="telefone" required>
 
         <label for="marca">Marca do Ar Condicionado</label>
         <input type="text" id="marca">
@@ -61,7 +60,9 @@
 
 
         <button type="enviar">Enviar</button>
-      </form>
+        <input type="hidden" name="accessKey" value="c21e7e26-db86-467a-8b78-591dcbfcdd51">
+        <input type="hidden" name="redirectTo" value="https://lparcondicionados.vercel.app/obrigado.html">
+      />
     </div>
 
     <!--localização-->
