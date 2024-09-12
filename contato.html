@@ -41,30 +41,31 @@
       <form action="https://api.staticforms.xyz/submit" method="post"
        id="formulario-contato" class="form grid-8">
 
+       <label for="nome">Nome</label>
+       <input type="text" name="name" placeholder="Digite seu nome" required>
 
-        <label for="nome">Nome</label>
-        <input type="text" name="name" placeholder="Digite seu nome" required>
+       <label for="email">E-mail</label>
+       <input type="email" name="email" placeholder="Digite seu email" required>
 
+       <label for="telefone">Telefone</label>
+       <input type="text" id="telefone" name="telefone" placeholder="Digite seu telefone" required>
 
-        <label for="email">E-mail</label>
-        <input type="email" name="email" placeholder="Digite seu email"required>
+       <label for="marca">Marca do Ar Condicionado</label>
+       <input type="text" id="marca" name="marca" placeholder="Digite a marca do aparelho" required>
 
-        <label for="telefone">Telefone</label>
-        <input type="text" id="telefone" placeholder="Digite seu telefone"required>
+       <label for="info">Qual sua dúvida</label>
+       <textarea id="info" name="mensagem" placeholder="Digite sua mensagem" required></textarea>
 
-        <label for="marca">Marca do Ar Condicionado</label>
-        <input type="text" id="marca"placeholder="Digite a marca do aparelho" required>
+       <button type="submit">Enviar</button>
 
-        <label for="info">Qual sua dúvida</label>
-        <textarea id="info" placeholder="Digite sua mensagem"required></textarea>
+       <!-- Campos ocultos necessários -->
+       <input type="hidden" name="accessKey" value="c21e7e26-db86-467a-8b78-591dcbfcdd51">
+       <input type="hidden" name="from" value="lparcondicionados <no-reply@seudominio.com>">
+       <input type="hidden" name="replyTo" value="{{email}}">
+       <input type="hidden" name="subject" value="Mensagem de contato do site lparcondicionados">
+       <input type="hidden" name="redirectTo" value="https://lparcondicionados.vercel.app/obrigado.html">
 
-
-        <button type="submit">Enviar</button>
-        <input type="hidden" name="accessKey" value="c21e7e26-db86-467a-8b78-591dcbfcdd51">
-        <input type="hidden" name="from" value="lparcondicionados <no-reply@seudominio.com>">
-        <input type="hidden" name="replyTo" value="{{email}}">
-        <input type="hidden" name="subject" value="Mensagem de contato do site SEU SITE">
-        <input type="hidden" name="redirectTo" value="https://lparcondicionados.vercel.app/obrigado.html">
+      </form>
 
 
 
