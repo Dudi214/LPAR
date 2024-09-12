@@ -38,23 +38,31 @@
       <h1>Faça um Orçamento Conosco</h1>
       <p>Estamos preparados para lhe atender</p>
 
-      <form id="formulario-orcamento" class="form grid-8">
+      <form action="https://api.staticforms.xyz/submit" method="post" id="formulario-orcamento" class="form grid-8">
         <label for="nome">Nome</label>
-        <input type="text" id="nome">
+       <input type="text" name="name" placeholder="Digite seu nome" required>
 
-        <label for="email">E-mail</label>
-        <input type="text" id="email">
+       <label for="email">E-mail</label>
+       <input type="email" name="email" placeholder="Digite seu email" required>
 
-        <label for="telefone">Telefone</label>
-        <input type="text" id="telefone">
+       <label for="telefone">Telefone</label>
+       <input type="text" id="telefone" name="phone" placeholder="Digite seu telefone" required>
 
-        <label for="marca">Marca do Ar Condicionado</label>
-        <input type="text" id="marca">
+       <label for="marca">Marca do Ar Condicionado</label>
+       <input type="text" id="marca" name="$appliance_brand" placeholder="Digite a Marca do aparelho" required>
 
         <label for="info">Informações(BTU e Voltagem do Aparelho)</label>
-        <textarea id="info"></textarea>
+        <textarea id="info" name="message" placeholder="Digite sua mensagem" required></textarea>
 
-        <button type="enviar">Enviar</button>
+        <button type="submit">Enviar</button>
+
+        <!-- Campos ocultos necessários -->
+       <input type="hidden" name="accessKey" value="c21e7e26-db86-467a-8b78-591dcbfcdd51">
+       <input type="hidden" name="from" value="lparcondicionados <no-reply@seudominio.com>">
+       <input type="hidden" name="replyTo" value="{{email}}">
+       <input type="hidden" name="subject" value="Mensagem de contato do site lparcondicionados">
+       <input type="hidden" name="redirectTo" value="https://lparcondicionados.vercel.app/obrigado.html">
+       
       </form>
     </div>
 
